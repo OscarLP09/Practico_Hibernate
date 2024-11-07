@@ -9,16 +9,15 @@ https://github.com/hibernate/dtd/blob/main/hibernate-configuration-3.0.dtd
 <hibernate-configuration>
     <session-factory>
 
-        <property name="connection.url">jdbc:mysql://localhost:3306/ad</property>
-        <property name="connection.username">root</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/practico</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <!--property name="dialect">org.hibernate.dialect.MySQLDialect</property-->
-        <!--property name="connection.password">pass</property-->
+
 
         <property name="show_sql">true</property>
 
-        <mapping class="org.example.Director"/>
-        <mapping class="org.example.Pelicula"/>
+        <mapping class="org.example.models.Opinion"/>
+        <mapping class="org.example.models.Pelicula"/>
 
     </session-factory>
 </hibernate-configuration>
